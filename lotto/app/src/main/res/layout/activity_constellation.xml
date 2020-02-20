@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ConstellationActivity">
+
+    <Button
+            android:text="로또번호확인"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/goResultbutton"
+            android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginStart="16dp"
+            android:layout_marginRight="16dp" android:layout_marginEnd="16dp" android:layout_marginBottom="16dp"
+            android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+
+    <DatePicker
+            android:layout_alignParentTop="true"
+            android:id="@+id/datePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"></DatePicker>
+    <ImageView
+            android:layout_width="120dp"
+            android:layout_height="match_parent" app:srcCompat="@drawable/constellation" android:id="@+id/imageView4"
+            android:layout_above="@id/goResultbutton" android:layout_below="@id/datePicker" android:layout_marginTop="16dp"
+            android:layout_margin="16dp"/>
+    <TextView
+            android:text="쌍둥이 자리"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView"
+            android:layout_alignBottom="@id/imageView4" android:layout_alignTop="@id/imageView4"
+            android:layout_marginLeft="16dp" android:layout_toRightOf="@id/imageView4"
+            android:gravity="center" android:maxLines="1" android:textColor="@android:color/black"
+            app:autoSizeMaxTextSize="48dp" app:autoSizeMinTextSize="32dp" app:autoSizeStepGranularity="1sp"
+            app:autoSizeTextType="uniform" android:layout_marginRight="32dp"/>
+
+
+</RelativeLayout>
